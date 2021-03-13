@@ -1,0 +1,10 @@
+<section class="container">
+    <h3 class="fund-name">{{gallery.name}}</h3>
+    <h4>Fund Name: {{fund_name}}</h4>
+    <h4>Fund Collected: {{money_collected}}</h4>
+    <section class="flex-row justify-center">
+        {{#each fund_name as |project|}}
+        {{> fund_collected}}
+        {{/each}}
+    </section>
+</section>
